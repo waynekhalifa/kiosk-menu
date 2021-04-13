@@ -1,0 +1,148 @@
+import { DishItem } from './dish-item';
+
+export const DishItems: DishItem[] = [
+  {
+    id: 1,
+    title: 'Cheesy Pizza',
+    imageurl: 'assets/images/Apple Chicken Salad.jpg',
+    price: 50.00,
+  },
+  {
+    id: 2,
+    title: 'Super Supreme',
+    imageurl: 'assets/images/Chicken Caesar Salad.jpg',
+    price: 50.00,
+  },
+  {
+    id: 3,
+    title: 'Chicken Nuggets',
+    imageurl: 'assets/images/Cream Of Tomato With Basil Soup.jpg',
+    price: 80.00,
+  },
+  {
+    id: 4,
+    title: 'Crema Di Funghi Soup',
+    imageurl: 'assets/images/Crema Di Funghi Soup.jpg',
+    price: 10.00,
+  },
+  // {
+  //   id: 5,
+  //   title: 'Onion Soup',
+  //   imageurl: 'assets/images/Onion Soup.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Orange Kale Salad',
+  //   imageurl: 'assets/images/Orange Kale Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 7,
+  //   title: 'Ovio Caprese Salad',
+  //   imageurl: 'assets/images/Ovio Caprese Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 8,
+  //   title: 'Shrimp Quinoa Salad',
+  //   imageurl: 'assets/images/Shrimp Quinoa Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 9,
+  //   title: 'Smoked Salmon With Cream Cheese Sandwich',
+  //   imageurl: 'assets/images/Smoked Salmon With Cream Cheese Sandwich.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 10,
+  //   title: 'Spinach And Beetroot Salad',
+  //   imageurl: 'assets/images/Spinach And Beetroot Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 11,
+  //   title: 'Apple Chicken Salad',
+  //   imageurl: 'assets/images/Apple Chicken Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 12,
+  //   title: 'Chicken Caesar Salad',
+  //   imageurl: 'assets/images/Chicken Caesar Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 13,
+  //   title: 'Cream Of Tomato With Basil Soup',
+  //   imageurl: 'assets/images/Cream Of Tomato With Basil Soup.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 14,
+  //   title: 'Crema Di Funghi Soup',
+  //   imageurl: 'assets/images/Crema Di Funghi Soup.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 15,
+  //   title: 'Onion Soup',
+  //   imageurl: 'assets/images/Onion Soup.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 16,
+  //   title: 'Orange Kale Salad',
+  //   imageurl: 'assets/images/Orange Kale Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 17,
+  //   title: 'Ovio Caprese Salad',
+  //   imageurl: 'assets/images/Ovio Caprese Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 18,
+  //   title: 'Shrimp Quinoa Salad',
+  //   imageurl: 'assets/images/Shrimp Quinoa Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 19,
+  //   title: 'Smoked Salmon With Cream Cheese Sandwich',
+  //   imageurl: 'assets/images/Smoked Salmon With Cream Cheese Sandwich.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 20,
+  //   title: 'Spinach And Beetroot Salad',
+  //   imageurl: 'assets/images/Spinach And Beetroot Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 21,
+  //   title: 'Spinach And Beetroot Salad',
+  //   imageurl: 'assets/images/Spinach And Beetroot Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 22,
+  //   title: 'Smoked Salmon With Cream Cheese Sandwich',
+  //   imageurl: 'assets/images/Smoked Salmon With Cream Cheese Sandwich.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 23,
+  //   title: 'Spinach And Beetroot Salad',
+  //   imageurl: 'assets/images/Spinach And Beetroot Salad.jpg',
+  //   price: 50.00,
+  // },
+  // {
+  //   id: 24,
+  //   title: 'Spinach And Beetroot Salad',
+  //   imageurl: 'assets/images/Spinach And Beetroot Salad.jpg',
+  //   price: 50.00,
+  // },
+];

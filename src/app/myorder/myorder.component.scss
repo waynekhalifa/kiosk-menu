@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+
+.title {
+  background-color: $primary-color;
+  color: white;
+  padding: 8px 0;
+}
+
+.order {
+  padding: 24px 0;
+}
+
+table {
+  width: 100%;
+
+  .cart-item {
+    background-color: #fafafa;
+
+    td {
+      padding: 8px;
+      text-align: center;
+      font-size: 18px;
+
+      .qty-update {
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #fff;
+        border: 1px solid lightgrey;
+
+        button {
+          background: #fff;
+          border-radius: 0;
+          border: none;
+          color: $primary-color;
+          padding: 8px;
+          cursor: pointer;
+          outline: none;
+
+          &:first-of-type {
+            border-right: 1px solid lightgrey;
+          }
+
+          &:last-of-type {
+            border-left: 1px solid lightgrey;
+          }
+        }
+
+        span {
+          padding: 8px;
+        }
+      }
+
+      .remove {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.actions {
+  background-color: $primary-color;
+  padding: 16px 0;
+
+  .btns-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__btn {
+    min-width: 30%;
+    background-color: darken($primary-color, 20%);
+  }
+}

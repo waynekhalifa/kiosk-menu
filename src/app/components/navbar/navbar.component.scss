@@ -1,0 +1,33 @@
+.cateogries {
+  max-height: 0;
+  overflow: hidden;
+  transition: all ease-in 0.3s;
+
+  li {
+    padding: 8px;
+    border: 1px solid lightgrey;
+    margin-bottom: 8px;
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      .img-wrap {
+        height: 60px;
+        overflow: hidden;
+      }
+
+      p {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &.active {
+    max-height: calc(100vh - 400px);
+  }
+}

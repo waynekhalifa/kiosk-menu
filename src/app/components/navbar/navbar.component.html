@@ -1,0 +1,10 @@
+<ul [className]="isActive ? 'cateogries active' : 'cateogries inactive'">
+  <li *ngFor="let slide of slides">
+    <a routerLink="/menu">
+      <div class="img-wrap">
+        <img src="{{ slide.imageurl }}" alt="{{ slide.title }}" />
+      </div>
+      <p>{{ slide.title }}</p>
+    </a>
+  </li>
+</ul>

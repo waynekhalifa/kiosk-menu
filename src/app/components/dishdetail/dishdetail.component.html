@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="dish-detail">
+  <div class="content-wrap">
+    <nav class="main-nav">
+      <div class="logo">
+        <div class="img-wrap">
+          <img src="assets/images/act.jpg" alt="act" />
+        </div>
+        <h1>Main Menu</h1>
+      </div>
+      <a routerLink="/your-order" class="btn btn--primary">Your Order</a>
+    </nav>
+    <div class="main-content">
+      <aside class="sidebar">
+        <app-navbar></app-navbar>
+      </aside>
+      <main [className]="isActive ? 'content active' : 'content inactive'">
+        <div class="detail">
+          <div class="img-wrap">
+            <img src="assets/images/Orange Kale Salad.jpg" alt="" />
+          </div>
+          <div *ngIf="dishItem" class="detail-content">
+            <h1>{{ dishItem.title }}</h1>
+            <p>
+              Marinated grilled chicken breast topped with fried mozzarella,
+              mayonnaise, tomato, red onions and pickled cucumber.
+            </p>
+          </div>
+        </div>
+        <app-order></app-order>
+      </main>
+    </div>
+  </div>
+</div>
+<app-myorder></app-myorder>

@@ -1,0 +1,16 @@
+<a routerLink="/place-order" class="home">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let slide of slides">
+      <div class="img-wrap">
+        <img src="{{ slide.imageurl }}" alt="{{ slide.title }}" />
+      </div>
+      <div class="overlay">
+        <div class="content-wrap">
+          <p>{{ slide.title }}</p>
+          <h1>Order Here</h1>
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+  <app-footer></app-footer>
+</a>

@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="your-order">
+  <div class="content-wrap">
+    <div class="section">
+      <nav class="main-nav">
+        <div class="logo">
+          <div class="img-wrap">
+            <img src="assets/images/logo.jpg" alt="ovio" />
+          </div>
+          <h1>Main Menu</h1>
+        </div>
+        <a routerLink="/your-order" class="btn btn--primary">Your Order</a>
+      </nav>
+    </div>
+    <div class="main-content">
+      <aside class="sidebar">
+        <app-navbar></app-navbar>
+      </aside>
+      <main [className]="isActive ? 'content active' : 'content inactive'">
+        <app-order></app-order>
+      </main>
+    </div>
+  </div>
+</div>

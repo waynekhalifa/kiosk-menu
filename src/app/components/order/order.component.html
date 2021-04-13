@@ -1,0 +1,67 @@
+<div class="cart-items">
+  <table class="table" *ngIf="dishItem">
+    <tbody>
+      <tr class="cart-item">
+        <td>
+          <div class="qty-update">
+            <button>
+              <i class="fa fa-minus"></i></button
+            ><span class="f-11"><b>1</b></span
+            ><button>
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+        </td>
+        <td>
+          <b class="ng-binding">{{ dishItem.title }}</b>
+        </td>
+        <td>
+          <label class="text-center ng-binding">{{ dishItem.price }}.00</label
+          ><label><i class="fa fa-minus-circle remove"></i></label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="dishItem" class="summary">
+    <table>
+      <tbody>
+        <tr>
+          <td>Subtotal</td>
+          <td>{{ dishItem.price }}.00</td>
+        </tr>
+        <tr>
+          <td><b>Service Charge</b></td>
+          <td>
+            <span>EGP 13.68</span>
+          </td>
+        </tr>
+        <tr>
+          <td><span>VAT</span><span>Municipality Tax</span></td>
+          <td>
+            <b>EGP 5.60</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Total Amount</b>
+          </td>
+          <td>
+            <b>EGP 59.28</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="actions">
+      <button routerLink="/menu" type="button" class="btn actions__btn">
+        Edit
+      </button>
+      <button
+        (click)="addToOrder()"
+        type="button"
+        class="btn btn--primary actions__btn"
+      >
+        Add to Order
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<ul [className]="isActive ? 'dishes active' : 'dishes inactive'">
+  <li class="dish-item" *ngFor="let dish of dishItems">
+    <a routerLink="/menu/{{ dish.id }}">
+      <div class="img-wrap">
+        <img src="{{ dish.imageurl }}" alt="{{ dish.title }}" />
+      </div>
+      <div class="dish-title">{{ dish.title }}</div>
+      <div class="price">{{ dish.price }}.00 EGP</div>
+    </a>
+  </li>
+</ul>

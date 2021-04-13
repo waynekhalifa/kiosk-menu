@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import "./app/styles/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.content-wrap {
+  max-width: calc(100vw - 48px);
+  margin: 0 auto;
+}
+
+.owl-carousel .owl-item {
+  height: 100vh;
+}
+
+.header .owl-carousel .owl-item {
+  height: 324px;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  width: 116%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 21px;
+  border-radius: 24px;
+  color: white;
+  font-size: 18px;
+  transition: all ease-in-out 0.3s;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+}
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

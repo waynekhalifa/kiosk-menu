@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+
+table {
+  width: 100%;
+
+  .cart-item {
+    background-color: #fafafa;
+
+    td {
+      padding: 8px;
+      text-align: center;
+      font-size: 18px;
+
+      .qty-update {
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #fff;
+        border: 1px solid lightgrey;
+
+        button {
+          background: #fff;
+          border-radius: 0;
+          border: none;
+          color: $primary-color;
+          padding: 8px;
+          cursor: pointer;
+          outline: none;
+
+          &:first-of-type {
+            border-right: 1px solid lightgrey;
+          }
+
+          &:last-of-type {
+            border-left: 1px solid lightgrey;
+          }
+        }
+
+        span {
+          padding: 8px;
+        }
+      }
+
+      .remove {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.summary {
+  padding: 16px;
+
+  table {
+    border-top: 1px solid lightgrey;
+    td {
+      width: 50%;
+      padding: 8px;
+      font-size: 18px;
+
+      &:nth-child(2n) {
+        text-align: right;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+
+    &__btn {
+      min-width: 40%;
+      font-size: 22px;
+    }
+  }
+}
